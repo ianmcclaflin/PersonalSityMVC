@@ -137,6 +137,28 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="_Archive\assets\favicon.ico" />
+    <Content Include="_Archive\assets\img\avataaars.svg" />
+    <Content Include="_Archive\assets\img\portfolio\20220224_182156.jpg" />
+    <Content Include="_Archive\assets\img\portfolio\cabin.png" />
+    <Content Include="_Archive\assets\img\portfolio\cake.png" />
+    <Content Include="_Archive\assets\img\portfolio\circus.png" />
+    <Content Include="_Archive\assets\img\portfolio\game.png" />
+    <Content Include="_Archive\assets\img\portfolio\safe.png" />
+    <Content Include="_Archive\assets\img\portfolio\submarine.png" />
+    <Content Include="_Archive\Contact.html" />
+    <Content Include="_Archive\css\styles.css" />
+    <Content Include="_Archive\index.html" />
+    <Content Include="_Archive\js\scripts.js" />
+    <Content Include="_Archive\Links.html" />
+    <Content Include="_Archive\OtherTemplatePages\assets\favicon.ico" />
+    <Content Include="_Archive\OtherTemplatePages\css\styles.css" />
+    <Content Include="_Archive\OtherTemplatePages\index.html" />
+    <Content Include="_Archive\OtherTemplatePages\js\scripts.js" />
+    <Content Include="_Archive\OtherTemplatePages\OriginalLinks.html" />
+    <Content Include="_Archive\OtherTemplatePages\OriginalPortfolio.html" />
+    <Content Include="_Archive\Portfolio.html" />
+    <Content Include="_Archive\Resume.html" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -162,6 +184,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="_Archive\assets\img\portfolio\Ian McClaflin Resume IT.pdf" />
+    <None Include="_Archive\packages.config" />
+    <Content Include="_Archive\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
