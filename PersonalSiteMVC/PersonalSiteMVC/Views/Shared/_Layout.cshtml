@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
     ViewBag.Title = "Home";
 }
 
@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <!-- jQueryUI CSS -->
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -41,7 +43,7 @@
             </div>
         </div>
     </nav>
-
+    
     <div>
         @RenderBody();
     </div>
@@ -104,8 +106,53 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <!-- Bootstrap 3.3.7 minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- jQueryUI Plugin Script -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <!-- Datatables.net Script -->
+    <script src="http://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+
+
+    <!-- jQuery Plugin Function Calls -->
+    <script type="text/javascript">
+
+        //Ready Function -- Code inside runs only AFTER the HTML & CSS load
+        $(function () {
+
+            //Accordion Function Call
+            $("#accordion").accordion();
+
+
+            //Datepicker function call - CUSTOMIZED
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+
+            //Tabs function call
+            $("#tabs").tabs();
+
+            //Datatables.net function call
+            $('#simpleTable').DataTable();
+
+        });
+
+    </script>
+
 
 </body>
 </html>
+
+
+
 
