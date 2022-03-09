@@ -12,7 +12,7 @@ namespace PersonalSiteMVC.Models
         //FIELDS - N/A
 
         //PROPERTIES
-        [Required(ErrorMessage = "*Name is require")]
+        [Required(ErrorMessage = "*Name is required")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "*Email is required")]
