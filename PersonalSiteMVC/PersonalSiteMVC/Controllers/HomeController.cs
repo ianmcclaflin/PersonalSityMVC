@@ -2,6 +2,7 @@
 using PersonalSiteMVC.Models;
 using System.Net.Mail;
 using System.Net;
+using System.Configuration;
 
 namespace PersonalSiteMVC.Controllers
 {
@@ -48,15 +49,23 @@ namespace PersonalSiteMVC.Controllers
                 $"Message: {cvm.Message}<br />" +
                 $"Please reply to {cvm.Email} with your response at your earliest convenience.";
 
-            MailMessage mm = new MailMessage("administrator@ianmcclaflin.com", "ianmcclaflin@gmail.com", cvm.Subject, message);
+            MailMessage mm = new MailMessage(
+                //FROM
+                ConfigurationManager.AppSettings["EmailUser"].ToString(),
+                //TO
+                ConfigurationManager.AppSettings["EmailTo"].ToString(),
+                                
+                cvm.Subject, message);
 
             mm.IsBodyHtml = true;
             mm.Priority = MailPriority.High;
             mm.ReplyToList.Add(cvm.Email);
 
-            SmtpClient client = new SmtpClient("mail.ianmcclaflin.com");
+            SmtpClient client = new SmtpClient(ConfigurationManager.AppSettings["EmailClient"].ToString());
+               
 
-            client.Credentials = new NetworkCredential("administrator@ianmcclaflin.com", "P@ssw0rd");
+            client.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailUser"].ToString(),
+                ConfigurationManager.AppSettings["EmailPass"].ToString());
 
             try
             {
