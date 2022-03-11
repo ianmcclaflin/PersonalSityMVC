@@ -156,6 +156,7 @@
     <Content Include="Content\img\avataaars.svg" />
     <Content Include="Content\img\portfolio\20220224_182156.jpg" />
     <Content Include="Content\img\portfolio\Alex Klee.gif" />
+    <Content Include="Content\img\portfolio\amit-lahav-rxN2MRdFJVg-unsplash.jpg" />
     <Content Include="Content\img\portfolio\Austin Wallace.jpg" />
     <Content Include="Content\img\portfolio\Benjamin McDaniel.jpg" />
     <Content Include="Content\img\portfolio\cabin.png" />
@@ -174,6 +175,8 @@
     <Content Include="Content\img\portfolio\safe.png" />
     <Content Include="Content\img\portfolio\SeanMcKinney.jpg" />
     <Content Include="Content\img\portfolio\submarine.png" />
+    <Content Include="Content\img\portfolio\Sword.jpg" />
+    <Content Include="Content\img\portfolio\Sword2.jpg" />
     <Content Include="Content\img\portfolio\Zack Sisler.jpg" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="_Archive\ContentArchiveFolder\bootstrap-theme.css" />
